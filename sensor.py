@@ -61,3 +61,8 @@ class LutronVariable(LutronDevice, SensorEntity):
     def _request_state(self) -> None:
         """Request the state from the device."""
         _ = self._lutron_device.state
+
+    def _set_state(self, **kwargs: Any) -> None:
+        """Request the state from the device."""
+        _ = self._lutron_device.state = value
+
