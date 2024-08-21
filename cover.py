@@ -49,10 +49,15 @@ class LutronCover(LutronDevice, CoverEntity):
     _attr_supported_features = (
         CoverEntityFeature.OPEN
         | CoverEntityFeature.CLOSE
+        | CoverEntityFeature.STOP
         | CoverEntityFeature.SET_POSITION
     )
     _lutron_device: Output
     _attr_name = None
+
+    async def async_stop_cover(self, **kwargs: Any) -> None:
+        """Stop the cover."""
+        self._lutron_device.stop()
 
     def close_cover(self, **kwargs: Any) -> None:
         """Close the cover."""
