@@ -8,5 +8,4 @@
   "loggers": ["pylutron"],
   "version": "v10.0.7",
   "requirements": ["git+https://github.com/ronluna/pylutron-homeworks-systvars-1"]
-  "//requirements": ["pylutron==0.2.12"]
 }
