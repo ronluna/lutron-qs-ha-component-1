@@ -136,7 +136,7 @@ async def async_setup_entry(hass: HomeAssistant, config_entry: ConfigEntry) -> b
     use_area_for_device_name = config_entry.data[CONF_USE_AREA_FOR_DEVICE_NAME]
 
     lutron_data_file = hass.config.path(LUTRON_DATA_FILE)
-    lutron_variable_ids = [155, 158]
+    lutron_variable_ids = [114, 208]
 
     lutron_client = Lutron(host, uid, pwd)
     await hass.async_add_executor_job(
