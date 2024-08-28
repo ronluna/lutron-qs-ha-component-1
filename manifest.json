@@ -1,6 +1,6 @@
 {
   "domain": "lutron",
-  "name": "Lutron",
+  "name": "Lutron for HomeWorks QS w SYSVARS",
   "codeowners": ["@cdheiser", "@wilburCForce"],
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/lutron",
