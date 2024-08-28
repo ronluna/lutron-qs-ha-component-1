@@ -6,5 +6,7 @@
   "documentation": "https://www.home-assistant.io/integrations/lutron",
   "iot_class": "local_polling",
   "loggers": ["pylutron"],
-  "requirements": ["pylutron==0.2.12"]
+  "version": "v10.0.6",
+  "requirements": ["git+https://github.com/ronluna/pylutron-homeworks-systvars-1"]
+  "//requirements": ["pylutron==0.2.12"]
 }
